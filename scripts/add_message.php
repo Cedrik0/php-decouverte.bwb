@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-$arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+$message = json_encode($_POST);
 
-echo json_encode($arr);
-?>
+$destination = $_SERVER['DOCUMENT_ROOT'] . "/data/messages.json";
+
+file_put_contents($destination, $message);
+header("Location: http://php-decouverte.bwb/?p=livre_d_or");

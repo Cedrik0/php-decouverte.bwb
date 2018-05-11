@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Accueil</a>
+        <a class="navbar-brand" href="index.php">Accueil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
                     //sinon cela nous affiche le bouton de deco avec l'username
                     }else{
                         ?>
-                        <a class="btn btn-outline-danger my-2 my-sm-0" href="/scripts/login.php">Hello <?= $_SESSION['username'] ?> , Deco</a>
+                        <a class="btn btn-outline-danger my-2 my-sm-0" href="/scripts/login.php"><?= $_SESSION['username'] ?> , Logout</a>
                         <?php
                     }
                     ?>

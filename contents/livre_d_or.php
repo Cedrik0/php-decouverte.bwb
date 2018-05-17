@@ -11,4 +11,4 @@
         <input type="submit" value="Envoyer" />
     </p>
 </form>
-<p class="pages"></p>
+<p class="pages"><?= $com['message'];?></p>
